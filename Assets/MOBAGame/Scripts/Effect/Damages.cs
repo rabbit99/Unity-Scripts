@@ -6,9 +6,9 @@ public class Damages : Effect
 {
     public int Damage = 1;
 
-    public Damages(Skill skill)
+    public Damages(Skill skill) : base(skill)
     {
-        this.skill = skill;
+       
     }
 
     public override void Spell()

@@ -6,9 +6,8 @@ public class Explosion : Effect
 {
     public int radius = 1;
 
-    public Explosion(Skill skill)
+    public Explosion(Skill skill) : base(skill)
     {
-        this.skill = skill;
     }
 
     public override void Spell()

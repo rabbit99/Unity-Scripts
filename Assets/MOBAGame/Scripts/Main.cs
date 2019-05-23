@@ -36,8 +36,7 @@ public class Main : MonoBehaviour
         }
         else
         {
-            Effect temp = (Effect)m_skill;
-            m_skill = temp.skill;
+            m_skill = Effect.UnDoEffect<Damages>(m_skill);
         }
     }
 
@@ -49,8 +48,7 @@ public class Main : MonoBehaviour
         }
         else
         {
-            Effect temp = (Effect)m_skill;
-            m_skill = temp.skill;
+            m_skill = Effect.UnDoEffect<Stun>(m_skill);
         }
     }
 
@@ -62,10 +60,11 @@ public class Main : MonoBehaviour
         }
         else
         {
-            Effect temp = (Effect)m_skill;
-            m_skill = temp.skill;
+            m_skill = Effect.UnDoEffect<Explosion>(m_skill);
         }
     }
+
+
 
     public void UseSkill()
     {

@@ -6,9 +6,8 @@ public class Stun : Effect
 {
     public int duration;
 
-    public Stun(Skill skill)
+    public Stun(Skill skill) : base(skill)
     {
-        this.skill = skill;
     }
 
     public override void Spell()

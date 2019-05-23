@@ -4,6 +4,8 @@ using UnityEngine;
 
 public abstract class Skill
 {
+    public List<Effect> all_Effect = new List<Effect>();
+
     public virtual void Spell() {
         Debug.Log("======詠唱======");
     }
